@@ -1,0 +1,118 @@
+.hire-section-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+
+/* Four Cards Grid */
+.bring-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.bring-card {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+}
+
+.bring-card-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+}
+
+.bring-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.bring-card-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Key Courses Section */
+.courses-container {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 50px;
+}
+
+.courses-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.courses-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.course-tag {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+}
+
+.course-tag:hover {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: var(--accent-secondary);
+  transform: translateY(-2px);
+}
+
+/* Resume CTA block */
+.resume-cta-block {
+  text-align: center;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: radial-gradient(circle at top, rgba(99, 102, 241, 0.05) 0%, transparent 80%), rgba(11, 15, 25, 0.6);
+  border-radius: var(--radius-lg);
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+}
+
+.resume-cta-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.resume-cta-desc {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+  .bring-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .bring-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
